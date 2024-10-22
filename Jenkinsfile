@@ -10,3 +10,12 @@ pipeline {
         }
     }
 }
+
+stages {
+        stage('Run app') {
+            steps {
+                sh 'node server.js'
+            }
+        }
+    }
+}
