@@ -10,7 +10,7 @@ pipeline {
         }
         stage('Run app') {
             steps {
-                sh 'node server.js'
+                echo 'start server.js'
             }
         }
 	stage('Docker') {
