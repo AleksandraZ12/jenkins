@@ -18,5 +18,10 @@ pipeline {
                 sh 'docker build -t "myapp" .' 
             }
         }
+	stage('testapp') {
+            steps {
+                sh 'npm test'
+            }
+        }
     }
 }
