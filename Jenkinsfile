@@ -8,10 +8,6 @@ pipeline {
                 echo 'Hello World'
             }
         }
-    }
-}
-
-stages {
         stage('Run app') {
             steps {
                 sh 'node server.js'
